@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato via WhatsApp</title>
+    <script>
+        function redirecionar() {
+            var nome = document.getElementById("nome").value;
+            var numero = "SEU_NUMERO"; // Coloque seu número aqui
+            var url = `https://api.whatsapp.com/send?phone=${+55 91 98330-8951}&text=Olá%20${encodeURIComponent(Romulo Soares)}`;
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <h1>Entre em Contato</h1>
+    <input type="text" id="nome" placeholder="Digite seu nome" required> 
+    <button onclick="redirecionar()">Enviar</button> 
+</body>
+</html>
+
+
